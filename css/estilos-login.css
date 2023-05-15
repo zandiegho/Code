@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: dotted; */
+}
+
+.nav--edition{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+small{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.div--fila--inputs{
+    margin: 60px;
+    padding: 50px;
+}
+
+
+.input--data{
+    text-align: center;
+    width: 75%;
+    margin: 0 50px 0 30px;
+}
+
+.checkbox{
+    align-content: center;
+    text-align: center;
+}
+
+
+.btn--login{
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 3px black ;
+    left: 0;
+    right: 0;
+    width: 10%;
+}
+
+.div--btn--login{
+    position: relative;
+    text-align: center;
+}
+
+
+/* ****************************************************************************** */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  /* Agregar la animación */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }

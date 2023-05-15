@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: dotted; */
+}
+
+.div--general{
+    margin-top: 10px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+.div--col1{
+    padding: 16px 10px;
+}
+
+.div--col2{
+    padding: 16px 10px;
+}
+
+.input-group{
+    margin: 10px 0;
+}
+
+.btn--quiero-registrarme{
+    background: #fff;
+    padding: 5px;
+    box-shadow: 5px 5px 3px black ;
+}
+
+.btn--registro{
+    text-align: right;    
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="css/estilos-register.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row div--general">
+
+            <div class="col col-md-4 div--col1">
+                <h2>REGISTRO</h2>
+                <p>
+                    <br>Regístrate con nosotros, Obtén un tiempo de cortesía y disfruta de la magia.
+                    Nosotros nos encargaremos de <b>TODO...</b>
+                    <br><br>El sistema te entregara la facilidad de
+                    gestionar tus inventarios, Establecer tus metas de venta y conocer como te
+                    ha ido a nivel general.
+                    <br><br>Al registrarte aceptas los terminos y condiciones
+                    que puedes revisar <a href="#">aquí</a>
+                </p>
+            </div>
+
+
+            <div class="col col-md-8 div--col2">
+
+                <form action="php/register.php" method="post" enctype="multipart/form-data">
+
+                    <!-- Negocio -->
+                    <div class="input-group">
+                        <span class="input-group-text"> Nombre de tu Marca?</span>
+                        <input type="text" aria-label="Nombre de la marca" class="form-control" 
+                            name="nombreMarca" id="nombreMarca"
+                            placeholder="Como se llama tu Negocio?">
+                    </div>
+
+                    <!-- Id nit / Rut  -->
+                    <div class="input-group">
+                        <span class="input-group-text"> El id de tu negocio</span>
+                        <input type="text" aria-label="id" class="form-control" 
+                        name="idMarca" id="idMarca"
+                        placeholder="Nit / Rut de tu negocio">
+                    </div>
+
+                    <!-- Nombre Contacto -->
+                    <div class="input-group">
+                        <span class="input-group-text">Nombre de contacto</span>
+
+                        <input type="text" aria-label="First name" class="form-control" 
+                        name="nombreContacto" id="nombreContacto" placeholder="Nombre">
+
+                        <input type="text" aria-label="Last name" class="form-control" 
+                        name="apellidoContacto" id="apellidoContacto" placeholder="Apellido">
+                    </div>
+
+                    <!-- Telefono de contacto -->
+                    <div class="input-group">
+                        <span class="input-group-text"> Telefono de Contacto</span>
+                        <input type="text" aria-label="telefono" class="form-control"
+                        name="telefonoContacto" id="telefonoContacto" placeholder="Telefono de contacto">
+                    </div>
+
+                    <!-- Correo Contacto -->
+                    <div class="input-group">
+                        <span class="input-group-text"> Email de contacto</span>
+                        <input type="email" aria-label="mail" class="form-control" 
+                        name="mailContacto" id="mailContacto" placeholder="mail de contacto">
+                    </div>
+                    <!-- Descripción de Marca -->
+                    <div class="input-group">
+                        <span class="input-group-text"> Descripción de Marca</span>
+                        <input type="text" aria-label="slogan" class="form-control"
+                        name="descrpcion" id="descrpcion"  placeholder="Puede ser un slogan">
+                    </div>
+                    <!-- Imagen -->
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">Imagen</label>
+                        <input type="file" class="form-control" id="inputGroupFile01" 
+                        name="imagen" id="imagen" >
+                    </div>
+
+                    <div class="btn--registro">
+                        <button type="submit" class="btn--quiero-registrarme">Quiero Registrarme</button>                
+                    </div>
+
+                </form> <!-- Fin Form -->
+            </div> <!-- fin div col 2 -->
+        </div> <!-- fin div col 1 -->
+    </div> <!-- FIN CONTAINER -->
+
+
+    <!-- scripts -->
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
