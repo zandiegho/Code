@@ -74,6 +74,43 @@ function conex($nameS, $idS, $nameC, $apellidoC, $tel, $mail, $descripcion, $rut
     $result3 = mysqli_query($conn, $query3);       
 
     if($result3){
-        echo "DATOS TOTALES INGRESADOS CORRECTAMENTE";
+        //echo "DATOS TOTALES INGRESADOS CORRECTAMENTE";
+        //pasar a Registro Exitoso
+
+        // Redirigir a la página "nuevo-destino.php" después de 5 segundos
+        header("refresh:2; url=../Registro-Exitoso.html");
+
+        // Mostrar un mensaje antes de redirigir
+        echo "Redireccionando en 5 segundos...";
+
+        // Detener la ejecución del script para que se muestre el mensaje
+        exit;
+
+        #########################################################################
+
+        // Conectarse a la base de datos y hacer una consulta
+        
+        $resultado = $conn->query("
+            SELECT u.id_user , u.username, n.id_Bussines, n.name 
+            from user u, negocio n 
+            where u.id_user = n.id_user 
+            and u.id_user = $id_user;
+            ");
+
+        // Convertir el resultado a un arreglo de PHP
+        $datos = array();
+        while ($fila = $resultado->fetch_assoc()) {
+            $datos[] = $fila;
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($datos);
+
+
+        // Convertir el arreglo a formato JSON y enviarlo al cliente
+
      }
+
+     
+
 }
