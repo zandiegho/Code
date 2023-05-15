@@ -54,21 +54,26 @@ function conex($nameS, $idS, $nameC, $apellidoC, $tel, $mail, $descripcion, $rut
     $mailCScaped = mysqli_real_escape_string($conn, "$mail");
 
     $query = " INSERT INTO User (username, phone, mail) values (concat('$nameC' , ' ' , '$apellidoC') , '$telCScaped' , '$mailCScaped') " ;
-    mysqli_query($conn, $query);
+    $result = mysqli_query($conn, $query);
 
-    $id_user = mysqli_insert_id($conn);
-
+    if($result){
+        $id_user = mysqli_insert_id($conn);
+    }
 
     $query2 = "INSERT INTO Negocio (nit, name, id_user) values ('$idS', '$nameS', '$id_user')";
-    mysqli_query($conn, $query2);
+    $result2 = mysqli_query($conn, $query2);
 
-    $id_bussines= mysqli_insert_id($conn);
-
+    if($result2){
+       $id_bussines= mysqli_insert_id($conn);
+    }
 
     $query3 = 
     "INSERT INTO datosnegocio (Descripcion, imagen, id_Bussines)
     values ('$descripcion', '$ruta', '$id_bussines')";
     
-    mysqli_query($conn, $query3);       
+    $result3 = mysqli_query($conn, $query3);       
 
+    if($result3){
+        echo "DATOS TOTALES INGRESADOS CORRECTAMENTE";
+     }
 }
