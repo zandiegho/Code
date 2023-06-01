@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: dotted; */
+}
+
+.div--container{
+    margin-top: 50px;
+}
+
+.col--products{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 60px;
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.p--products{
+    margin-bottom: 40px;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+
+
+
