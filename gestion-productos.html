@@ -39,24 +39,62 @@
 
     <div class="row justify-content-center">
 
-      <div class="col col-md-6 col--products">
+      <div class="col  col--products">
         <h2>Crear Productos</h2>
         <p class="p--products">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus porro perferendis velit, dolor similique,
           harum suscipit illum in ratione qui, non natus. Aliquam nemo nobis excepturi placeat praesentium labore
           repudiandae!</p>
-        <button class="btn">Comenzar a Crear</button>
+        <button class="btn--crud">Comenzar a Crear</button>
       </div>
 
-      <div class="col col-md-6 col--products">
+      <div class="col col--products">
         <h2>Eliminar Productos</h2>
         <p class="p--products">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus porro perferendis velit, dolor similique,
           harum suscipit illum in ratione qui, non natus. Aliquam nemo nobis excepturi placeat praesentium labore
           repudiandae!</p>
-        <button class="btn">Eliminar</button>
+        <button class="btn--crud">Eliminar</button>
       </div>
 
-    </div>
-  </div>
+    </div> <!-- fin row -->
+    
+    <hr>
+
+    <div class="row">
+      <div class="col">
+        <h2>Agregar Productos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni, neque autem aperiam eum provident eius assumenda dolorem rem voluptatibus suscipit non, esse in minima quidem necessitatibus! Veniam, quod ab.</p>
+      </div> <!-- fIN COL 1 -->
+
+      <div class="col">
+        <form action="php/agregarProducto.php">
+
+          <div class="div--nombreProducto">
+            <label for="productName" class="form-label">Nombre de prodcuto</label>
+            <input type="text" name="productName" id="productName">
+          </div>
+
+          <div class="div--nombreProducto">
+            <label for="productPrice" class="form-label">Precio de prodcuto</label>
+            <input type="number" name="productPrice" id="productPrice">
+          </div>
+          
+          <div class="div--nombreProducto">
+            <label for="productObs" class="form-label">Observación </label>
+            <input type="text" name="productObs" id="productObs">
+          </div>
+
+          <div class="div--nombreProducto">
+            <label for="productImage" class="form-label">Imgen</label>
+            <input type="file" name="productImage" id="productImage">
+          </div>
+
+
+        </form>
+      </div>
+    
+    </div> <!-- fin row agregar producto -->
+
+  </div> <!-- fin container -->
 </body>
 
 

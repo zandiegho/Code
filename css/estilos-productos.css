@@ -28,6 +28,18 @@ h2{
     font-size: 18px;
 }
 
+.btn--crud{
+    background: #fff;
+    padding: 5px;
+    box-shadow: 5px 5px 3px black ;
+    border: #000 1px solid;
+}
 
+hr{
+    margin: 35px 10px;
+    line-height: 5px;
+}
 
-
+.div--nombreProducto{
+    margin: 20px 0;
+}
