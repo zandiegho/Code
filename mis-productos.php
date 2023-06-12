@@ -1,10 +1,11 @@
 <?php 
 session_start(); //Iniciar la sesión
-if(!isset($_SESSION["idBussines"])){ //Si no hay sesión activa, redire
+
+if(!isset($_SESSION["idNegocio"])){ //Si no hay sesión activa, redire
     header('Location: php/login.php');
 }
 
-$idBussines = $_SESSION["idBussines"];
+$idBussines = $_SESSION["idNegocio"];
 # echo "<br/>$idBussines\_%";
 
 

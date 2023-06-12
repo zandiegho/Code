@@ -55,7 +55,7 @@ session_start(); //Iniciar la sesión
         </li> -->
 
         <li class="nav-item">
-          <a class="nav-link" href="gestion-productos.html">Mis Productos</a>
+          <a class="nav-link" href="mis-productos.php">Mis Productos</a>
         </li>
 
         <li class="nav-item">
