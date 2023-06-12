@@ -1,10 +1,14 @@
 <?php
 
+session_start(); //Iniciar la sesión
+
 $nameShop = $_POST["nombreEstablecimiento"];
 $idShop = $_POST["idEstablecimiento"];
 $password = $_POST["codigoEstablecimiento"];
 
-echo "$nameShop $idShop $password";
+
+
+
 
 //Sanitizar variables de html a php
 if(isset($nameShop) && isset($idShop) && isset($password) ){
@@ -28,7 +32,7 @@ function conex($shop, $id, $pass){
 
     //crear consulta a tabla asesor donde documento sea igual a $docAsesor
     $query = " 
-    SELECT nit, name
+    SELECT nit, name, id_bussines
     FROM Negocio
     WHERE nit = '$id' AND name = '$shop' AND id_bussines = $pass ";
     
@@ -38,6 +42,18 @@ function conex($shop, $id, $pass){
         while ($row = mysqli_fetch_assoc($result)) {
             $shop = $row['name'];
             $id = $row['nit'];
+            $pass = $row['id_bussines'];
+
+            $_SESSION['nameMarca'] = $shop;
+            $_SESSION['idMarca'] = $id;
+            $_SESSION['idNegocio'] = $pass;
+
+
+
+            header("Location: ../gestion-productos.php");
+            
+            exit();
+            
         }        
     }
     else { 

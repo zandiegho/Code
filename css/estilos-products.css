@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: dotted 1px black;  */
+}
+
+img{
+    border-radius: 10px;
+}
+
+.targeta{
+    max-width: 350px;
+    margin-bottom: 20px;
+}
